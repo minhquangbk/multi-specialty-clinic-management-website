@@ -1,0 +1,12 @@
+.link-effect {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.link-effect:hover {
+    color: #0056b3 !important; /* Thay đổi màu khi hover */
+}
+
+.link-effect:active {
+    transform: scale(1.1); /* Phóng to nhẹ khi nhấn */
+    color: #ff4500 !important; /* Đổi màu khi nhấn */
+}

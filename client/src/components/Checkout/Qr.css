@@ -1,0 +1,112 @@
+/* VietQR.css */
+
+.vietqr {
+  background-color: rgba(255, 255, 255, 0.9); /* Màu trắng mờ */
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw; /* Đảm bảo độ rộng toàn màn hình */
+  height: 100vh; /* Đảm bảo chiều cao toàn màn hình */
+}
+
+.vietqr-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .vietqr-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .vietqr-content {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    width: 800px;
+    text-align: center;
+  }
+  
+  .vietqr-frame {
+    border: 2px solid #dce2f0;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+  }
+  
+  .vietqr-header {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .vietqr-image {
+    width: 350px;
+    height: 350px;
+    margin: 10px 0;
+  }
+  
+  .vietqr-info p {
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  .vietqr-footer {
+    font-size: 12px;
+    color: #777;
+    margin-top: 10px;
+  }
+  
+  .vietqr-print-button {
+    margin-top: 15px;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .vietqr-print-button:hover {
+    background-color: #0056b3;
+  }
+
+  .qr-delete {
+    position: fixed;
+    right: 0px; /* Thêm đơn vị px */
+    top: 0px; /* Đặt khoảng cách từ phía trên nếu cần */
+    z-index: 1000; /* Đảm bảo lớp hiển thị trên các thành phần khác */
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .qr-delete img{
+    height: 50px;
+    width: 50px;
+  }
+  
+  .vietqr-reload {
+    position: fixed;
+    top: 300px;
+    right: -700px;
+    height: 100vh;             /* Chiều cao của phần tử chứa là 100% chiều cao màn hình */
+    width: 100%;               /* Chiều rộng chiếm 100% màn hình */
+  }
+
+
+  .vietqr-info-block{
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  }
+  

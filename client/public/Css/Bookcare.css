@@ -1,0 +1,164 @@
+/* Hiệu ứng chính cho form */
+.form-container-dl {
+  max-width: 500px;
+  margin: 50px auto; 
+  padding: 30px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.form-container-dl h2 {
+  text-align: center;
+  color: #0d6efd;
+  margin-bottom: 20px;
+}
+
+.form-container-dl p {
+  font-size: 14px;
+  text-align: center;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.form-group-dl {
+  margin-bottom: 20px;
+  animation: fadeInUp 0.5s ease-out;
+}
+.form-group-dl-time {
+  display: flex;
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.dl-time-date {
+  width: 385px;
+  padding-left: 15px;
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+label {
+  font-size: 14px;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.radio-group-dl label {
+  display: flex;
+  margin-top: 15px;
+}
+
+.radio-group-dl {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -10px;
+}
+
+select, input, textarea {
+  padding: 10px;
+  font-size: 14px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:focus, input:focus, textarea:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 8px rgba(13, 110, 253, 0.2);
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+.submit-btn-dl {
+  width: 100%;
+  background-color: #0d6efd;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn-dl:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+.submit-btn-dl:active {
+  background-color: #00408f;
+  transform: translateY(1px);
+}
+
+.radio-group-dl input[type="radio"] {
+  margin-right: 8px;
+}
+
+/* Thêm khoảng cách và bố cục đẹp hơn */
+.form-container-dl form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group-dl label {
+  font-weight: 500;
+}
+
+.form-group-dl select, .form-group-dl input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Điều chỉnh các kích thước cho vừa vặn */
+select, input[type="date"], textarea {
+  font-family: inherit;
+}
+
+/* Điều chỉnh các trạng thái chọn */
+.radio-group-dl label:hover {
+  color: #0d6efd;
+}
+
+/* Tạo các hiệu ứng mờ dần khi xuất hiện */
+@keyframes fadeInRadio {
+  from {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
