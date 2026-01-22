@@ -27,7 +27,7 @@ function LoginForm() {
       });
 
       // Kiểm tra xem phản hồi có chứa thông tin người dùng không
-      if (response.data && response.data.user && (response.data.user.type === 1 || response.data.user.type === 0)
+      if (response.data && response.data.user && (response.data.user.type === 3 || response.data.user.type === 1 || response.data.user.type === 0)
  ) {
         const user = response.data.user;
         

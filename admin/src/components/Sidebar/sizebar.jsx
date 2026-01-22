@@ -243,6 +243,60 @@ import { useUser } from '../../until/userContext';
         </>
         )}
 
+        {user?.type === 3 && (
+            <>
+              <a className="sidebar-brand d-flex align-items-center justify-content-center" href="#">
+                <div className="sidebar-brand-icon">
+                  <i className="fas fa-user-md"></i>
+                </div>
+                <div className="sidebar-brand-text mx-3">Lễ tân </div>
+              </a>
+              <hr className="sidebar-divider my-0" />
+              <li className="nav-item">
+                <Link className="nav-link" to="/Thongkebacsi">
+                  <i className="fas fa-fw fa-tachometer-alt"></i>
+                  <span>Thống kê</span>
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link className="nav-link" to={`/ProfileBacSi/${idUser}`}>
+                  <i className="fas fa-user-md"></i> {/* Lễ tân */}
+                  <span>Thông tin cá nhân</span>
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link className="nav-link" to="IndexNghiPhepBacSi">
+                  <i className="fas fa-calendar-times"></i> {/* Nghỉ phép */}
+                  <span>Xin nghỉ phép</span>
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link className="nav-link" to={`/IndexLichKhamBacSi/${idUser}`}>
+                  <i className="fas fa-stethoscope"></i> {/* Khám bệnh */}
+                  <span>Lịch khám bệnh</span>
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link className="nav-link" to={`/IndexhosobenhanBacSi/${idUser}`}>
+                  <i className="fas fa-notes-medical"></i> {/* Hồ sơ bệnh án */}
+                  <span>Hồ sơ bệnh án</span>
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link className="nav-link" to="/Capnhattaikhoan">
+                  <i className="fas fa-user-cog"></i> {/* Tài khoản */}
+                  <span>Tài khoản</span>
+                </Link>
+              </li>
+
+            </>
+        )}
+
         <hr className="sidebar-divider" />
 
         <div className="text-center d-none d-md-inline">
