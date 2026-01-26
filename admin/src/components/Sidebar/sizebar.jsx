@@ -273,18 +273,33 @@ import { useUser } from '../../until/userContext';
                 </Link>
               </li>
 
+              {/* Lịch Khám */}
               <li className="nav-item">
-                <Link className="nav-link" to={`/IndexLichKhamBacSi/${idUser}`}>
-                  <i className="fas fa-stethoscope"></i> {/* Khám bệnh */}
-                  <span>Lịch khám bệnh</span>
+                <Link className="nav-link" to="/Indexlichkham">
+                  <i className="far fa-calendar-check"></i>
+                  <span>Lịch Khám</span>
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to={`/IndexhosobenhanBacSi/${idUser}`}>
-                  <i className="fas fa-notes-medical"></i> {/* Hồ sơ bệnh án */}
-                  <span>Hồ sơ bệnh án</span>
-                </Link>
+                <a
+                    className="nav-link collapsed"
+                    onClick={() => toggleMenu('patientRecords')}
+                    href="#!"
+                >
+                  <i className="fas fa-user-friends"></i>
+                  <span>Hồ Sơ Bệnh Nhân</span>
+                </a>
+                <div
+                    className={`collapse ${activeMenu === 'patientRecords' ? 'show' : ''}`}
+                    aria-labelledby="headingPatientRecords"
+                    data-parent="#accordionSidebar"
+                >
+                  <div className="bg-white py-2 collapse-inner rounded">
+                    <Link className="collapse-item" to="/Indexbenhnhan">Bệnh nhân</Link>
+                    <Link className="collapse-item" to="/Indexhosobenhan">Hồ sơ khám bệnh</Link>
+                  </div>
+                </div>
               </li>
 
               <li className="nav-item">
